@@ -23,12 +23,12 @@ def printer (attendees)
   attendees.each do |attendee|
     badges<<"Hello, my name is #{attendee}."
   end
-  puts badges
+  badges.each do |attendee|
   attendeeswithroomnumbers=[]
   attendees.each_with_index do |name, index|
     attendeeswithroomnumbers<<"Hello #{name}! You'll be assigned to room #{index+1}!"
   end
   attendeeswithroomnumbers.each do |attendee|
-  puts #{attendee}
+  puts attendee
   end
 end
