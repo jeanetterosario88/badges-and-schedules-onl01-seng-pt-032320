@@ -19,10 +19,7 @@ attendeeswithroomnumbers=[]
 end
 
 def printer (attendees)
- badges=[]
-  attendees.each do |attendee|
-    badges<<"Hello, my name is #{attendee}."
-  end
+ 
   badges.each do |attendee|
   attendeeswithroomnumbers=[]
   attendees.each_with_index do |name, index|
