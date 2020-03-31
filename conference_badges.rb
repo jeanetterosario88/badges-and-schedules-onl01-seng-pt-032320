@@ -29,5 +29,6 @@ def printer (attendees)
     attendeeswithroomnumbers<<"Hello #{name}! You'll be assigned to room #{index+1}!"
   end
   attendeeswithroomnumbers.each do |attendee|
-  puts
+  puts #{attendee}
+  end
 end
