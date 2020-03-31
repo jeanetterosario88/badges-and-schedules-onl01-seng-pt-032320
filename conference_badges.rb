@@ -19,9 +19,8 @@ attendeeswithroomnumbers=[]
 end
 
 def printer (attendees)
- 
-  badges.each do |attendee|
-  attendeeswithroomnumbers=[]
+ batch_badge_creator(attendees).each do |attendee|
+  end
   attendees.each_with_index do |name, index|
     attendeeswithroomnumbers<<"Hello #{name}! You'll be assigned to room #{index+1}!"
   end
